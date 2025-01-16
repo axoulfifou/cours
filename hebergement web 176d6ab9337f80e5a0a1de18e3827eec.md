@@ -2,7 +2,7 @@
 
 Enoncée :
 
-![image.png](image%202.png)
+![image.png](images/image%202.png)
 
 1. corrompre dns , avec les nom des serveurs (servername du virtualhost) lamp qui correspondent à l’adresse ip wan du pf sense
 2. règle nat sur pfsensed pour autoriser requete a traverser le pfsense sur le port 80 et 443 pour quelle soit regdirigé sur l’adresse du reverse proxy
@@ -14,7 +14,7 @@ seralias
 
 faire le redirect vers 443 et paramétrer le 443 :
 
-![image.png](image%203.png)
+![image.png](images/image%203.png)
 
 les ligne ssl sont pas obligatoires
 
@@ -22,13 +22,13 @@ dans proxypass et proxy pass reverse c’est l’ip du serveur lamp donc
 
 1. sur le serveur lamp on fait un virtualhost egalement : donc 2 sur chaque serveurs ; 2 et 2
 
-![image.png](image%204.png)
+![image.png](images/image%204.png)
 
 on va utiliser le certificat autosigné lors de l’installation ssl apache mais pas besoin pour l’EI
 
 Règle de par feu :
 
-![image.png](image%205.png)
+![image.png](images/image%205.png)
 
 1. configurer le pare feu
 - adresse lan et wan + passerelle
@@ -40,7 +40,7 @@ reverse proxy :
 
 - configurer carte réseau + adresse  +test
 
-![image.png](image%206.png)
+![image.png](images/image%206.png)
 
 configurer regle pare feu + check dns resolv.conf
 
@@ -153,7 +153,7 @@ Pare feu :
 
 rediriger les requêtes qu’ils reçois vers le reverse proxy :
 
-![image.png](image%207.png)
+![image.png](images/image%207.png)
 
 mettre dans le fichier hosts de mon ordi le nom de l’url avec l’adresse ip du pare-feu en correspondance.
 
